@@ -1,0 +1,7 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Assad Isah <nottherealalanturing@gmail.com>",
+  "license": "MIT"
+}
