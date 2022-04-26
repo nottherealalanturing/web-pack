@@ -8,6 +8,7 @@
   "devDependencies": {
     "css-loader": "^6.7.1",
     "csv-loader": "^3.0.3",
+    "html-webpack-plugin": "^5.5.0",
     "json5": "^2.2.1",
     "style-loader": "^3.3.1",
     "toml": "^3.0.0",

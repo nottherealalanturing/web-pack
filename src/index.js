@@ -1,33 +1,16 @@
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon.png';
-import Data from './data.xml';
-import Notes from './data.csv';
-import toml from './data.toml';
-import yaml from './data.yaml';
-import json from './data.json5';
-
-console.log(toml.title);
-console.log(toml);
-console.log(yaml.title);
-console.log(yaml);
-console.log(json.title);
-console.log(json);
+import printMe from './print';
 
 function component() {
+  const btn = document.createElement('button');
   const element = document.createElement('div');
 
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+  btn.innerHTML = 'Click me and check the console!';
 
-  const myIcon = new Image();
-  myIcon.src = Icon;
+  btn.onclick = printMe;
 
-  element.appendChild(myIcon);
-
-  console.log(Data);
-  console.log(Notes);
-
+  element.appendChild(btn);
   return element;
 }
 
