@@ -8,7 +8,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output',
+      title: 'Development',
     }),
   ],
   output: {
@@ -24,5 +24,8 @@ module.exports = {
         type: 'asset/resource',
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };
