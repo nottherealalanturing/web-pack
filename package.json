@@ -20,5 +20,8 @@
     "watch": "webpack --watch",
     "start": "webpack serve --open --config webpack.dev.js"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "yarn": "YARN NO LONGER USED - use npm instead."
+  }
 }
